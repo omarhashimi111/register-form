@@ -25,6 +25,11 @@ const Form = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+
+  @media (max-width: 650px){
+    width: 100%;
+    height: 100%;
+  }
 `
 const Fieldset = styled.div`
   padding: 10px;
@@ -66,7 +71,7 @@ const Button = styled.button`
 
 
 const RegisterSeller = () => {
-  const [currentQ, setCurrentQ] = useState(3)
+  const [currentQ, setCurrentQ] = useState(1)
   const [pending, setPending] = useState(-1)
 
 

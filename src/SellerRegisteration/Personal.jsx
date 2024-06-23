@@ -87,7 +87,6 @@ const Gender = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
 `
 
 const Label = styled.label`
@@ -196,12 +195,12 @@ const Personal = ({ setQ , setP }) => {
             <InputContainer>
                 <Label htmlFor="gender">Gender</Label>
                 <Gender>
-                    <Label htmlFor="male">Male</Label>
                     <Input type='radio' name='gender' id="male" value="male" required/>
-                    <Label htmlFor="female">Female</Label>
+                    <Label htmlFor="male">Male</Label>
                     <Input type='radio' name='gender' id="female" value="female" />
-                    <Label htmlFor="other">Other</Label>
+                    <Label htmlFor="female">Female</Label>
                     <Input type='radio' name='gender' id="other" value="other" />
+                    <Label htmlFor="other">Other</Label>
                 </Gender>
             </InputContainer>
             <InputContainer>
